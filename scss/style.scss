@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{width:1200px;
+margin:0 auto;}
+h1,h2,h3,h4,h5,h6{
+line-height:0;}
+ul,li,a{list-style-type: none;text-decoration: none;}
+
+$red:white;
+$black:#666666;
+$green:black;
+$pera-font:14pt;
+$line-height:10pt;
+@mixin peragraph{font-weight: 700;font-family: Myria Pro; line-height:$line-height;color:$red;}
+
+
+
+.bgmain {
+.main{
+        background-color: #fff;
+        padding:9px;
+        top:0;
+        left:0;
+        transform: translate(0%,-17%);
+ul li a{
+color: black !important;
+position: relative;
+margin:0 10px;
+
+&:hover{color: red !important;}
+
+&::after{
+position: absolute;
+content: "";
+width: 0;
+height: 2px;
+left:0px;
+bottom:0px;
+background-color:red;
+transition: all linear 0.5s;
+}
+&:hover::after{width: 100%;}
+}
+}}
+
+#top-page{
+
+
+.top-text{
+background-color: #333333;
+display: flex;
+justify-content: space-between;
+align-items: center;
+line-height: 0%;
+padding:10px 0;
+
+.text-one{width:15%;
+text-align: center;
+h1{font-weight: 700;
+	font-size: 14px;
+	color: #fff;
+  display: inline-block;
+    line-height:0px;
+}
+p{font-size: 6pt;
+color: white;
+line-height:0px;
+}}
+
+.text-two{width:7%;
+text-align: center;
+h1{font-weight: 700;
+	font-size: 14px;
+	color: #fff;
+}
+p{font-size: 6pt;
+color: #fff;
+}}
+
+.text-three{width:13%;
+text-align: center;
+color: white;
+
+h1{font-weight: 700;
+	font-size: 14px;
+	color: #fff;
+    display: inline-block;
+}
+p{font-size: 6pt;
+color: white;
+}
+}
+}
+}
+#banner{
+background: url(../css/images/Soltivo-index.jpg);
+padding:200px;
+position: absolute;
+width: 100%;
+top:0;
+left: 0;
+z-index: -1;
+.banner-main{
+    text-align: center;
+    
+.banner-text{
+line-height: 20px;
+
+p{@include peragraph();font-size:$pera-font;}
+h1{padding:15px; @include peragraph();font-size:$pera-font+26;}
+.btn{ text-align: center;
+
+.one { padding:11px; @include peragraph();  margin-top: 15% ;  font-size:$pera-font -4; 
+&:hover{color: white; background-color:#cc3300;}}
+
+.two{ padding:11px; @include peragraph();  margin-top: 15%;  font-size:$pera-font -4; 
+&:hover{color: #fff; background-color:#cc3300;}}
+}
+
+}}
+}
+#about-us-part{
+padding:500px 0;
+
+.about-main{
+
+.about-item-one{
+display: flex; 
+.about-image{ background: linear-gradient(hsla(0, 0%, 100%, 0.295),hsl(15, 100%, 40%) );}
+.about-text{width: 39%; text-align: left; margin-left: 15%; margin-top: 6%;
+h1{@include peragraph(); line-height:$line-height+ 12pt; color:$green; }
+.aa  {@include peragraph(); line-height:$line-height+ 5pt;color:$black;padding-top:10px; }
+.dd {@include peragraph(); line-height:$line-height+ 5pt;color:$black; }
+.bb { width: 24%; display: inline-block;}
+.ee{@include peragraph();color:$green; padding:10px;
+&:hover{background-color: #cc3300;color:green; } }
+}}
+}
+}
